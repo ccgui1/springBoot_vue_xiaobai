@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserService  extends ServiceImpl<UserMapper, User> {
 
-
     public  boolean saveUser(User user){
         if(user.getId() == null){
             save(user);
